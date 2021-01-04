@@ -1,0 +1,16 @@
+table {
+    width: 500px;
+}
+
+table thead tr {
+    border: 1px solid red;
+}
+
+table thead tr th {
+
+    border: 1px solid black;
+}
+
+table thead tr:last-child {
+    width: 20%;
+}

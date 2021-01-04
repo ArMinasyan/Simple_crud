@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div>
+        <input type="text" placeholder="First name" id="userInfo_firstName" />
+        <input type="text" placeholder="Last name" id="userInfo_lastName" />
+        <input type="email" placeholder="Email" id="userInfo_email" />
+        <button id="add">Add</button>
+        <button id="deleteBulk">Delete Bulk</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+</body>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src='js/main.js'></script>
+
+</html>
