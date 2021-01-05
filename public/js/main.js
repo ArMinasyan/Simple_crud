@@ -54,6 +54,18 @@ function deleteUser(id) {
     })
 }
 
+document.getElementById('deleteBulk').addEventListener('click', deleteBulkUser);
+
+function deleteBulkUser(id) {
+    axios({
+        method: 'DELETE',
+        url: "/api/user/" + id,
+    }).then(res => {
+        if (res.data.deleted) alert(res.data.msg);
+        else alert("Error");
+    })
+}
+
 axios({
     method: 'GET',
     url: "/api/user",
